@@ -8,7 +8,7 @@
     height: 100vh;
     background-size: cover;
 }
-.btn_one{
+.btn_one {
     color: white;
     font-size: 30px;
     font-weight: 200;
@@ -16,14 +16,16 @@
     left: 16px;
     line-height: 60px;
     cursor: pointer;
+    transition: all 0.2s linear;
 }
 .sidebar_menu{
 position: fixed;
-/*left:-350px; */
+left:-350px; 
 height: 100vh;
 width: 300px;
 background-color: rgba(255, 255, 255, 0.1);
 box-shadow: 0 0  6px rgba(255, 255, 255, 0.6);
+transition: all 0.2s linear;
 }
 
 .sidebar_menu .logo {
@@ -43,12 +45,13 @@ box-shadow: 0 0  6px rgba(255, 255, 255, 0.6);
 }
 .btn_two i{
     color: white;
-    font-size:10px;
+    font-size:15px;
     position: absolute;
-    left: 280px;
+    left: 270px;
     line-height: 60px;
-    /* opacity: 0; */
+     opacity: 0.8; 
     cursor: pointer;
+    transition: all 0.2s linear;
 }
 .sidebar_menu .menu{
     position: absolute;
@@ -83,12 +86,26 @@ box-shadow: 0 0  6px rgba(255, 255, 255, 0.6);
     transform: scale(1.1);
     box-shadow: 0 0  6px rgba(255, 255, 255, 0.6);
 }
-/*
+
 .btn_two i:hover{
     font-size: 20px;
-} */
+} 
+.btn_one i:hover{
+    transform: scale(1.1);
+} 
 
 .social_media i:hover{
     opacity: 1;
     transform: scale(1.1);
+}
+
+/*Main configuration of the checkbox */
+#check:checked ~.sidebar_menu {
+    left:0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+#check:checked ~ .btn_two i{
+    opacity: 1;
 }
