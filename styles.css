@@ -83,7 +83,7 @@ transition: all 0.2s linear;
 }
 
 .sidebar_menu .menu li:hover{
-    transform: scale(1.1);
+    transform: scale(1);
     box-shadow: 0 0  6px rgba(255, 255, 255, 0.6);
 }
 
